@@ -84,3 +84,32 @@ export const { styled, css, getCssText } = createStitches({
     my: (value: string) => ({ marginTop: value, marginBottom: value }),
   },
 });
+
+export const Flex = styled("div", {
+  display: "flex",
+  variants: {
+    row: { true: { flexDirection: "row" } },
+    col: { true: { flexDirection: "column" } },
+    justify: {
+      start: { justifyContent: "start" },
+      end: { justifyContent: "end" },
+      center: { justifyContent: "center" },
+      between: { justifyContent: "space-between" },
+      around: { justifyContent: "space-around" },
+      evenly: { justifyContent: "space-evenly" },
+    },
+    justifyItems: {
+      start: { justifyItems: "start" },
+      end: { justifyItems: "end" },
+      center: { justifyItems: "center" },
+      stretch: { justifyItems: "stretch" },
+    },
+    align: {
+      start: { alignItems: "start" },
+      end: { alignItems: "end" },
+      center: { alignItems: "center" },
+      baseline: { alignItems: "baseline" },
+      stretch: { alignItems: "stretch" },
+    },
+  },
+});
