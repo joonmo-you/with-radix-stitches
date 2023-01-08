@@ -24,7 +24,7 @@ const seperatorClass = css({
 
 export default function TopMenu() {
   return (
-    <Flex row justify="end" align="center">
+    <Flex css={{ height: "35px" }} row justify="end" align="center">
       <Link className={linkClass()} href="https://www.kurly.com/member/signup">
         <MenuItem css={{ color: "$primary" }}>회원가입</MenuItem>
       </Link>
