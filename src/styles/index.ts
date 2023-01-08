@@ -113,3 +113,11 @@ export const Flex = styled("div", {
     },
   },
 });
+
+export const Relative = styled("div", {
+  position: "relative",
+});
+
+export const Absolute = styled("div", {
+  position: "absolute",
+});
