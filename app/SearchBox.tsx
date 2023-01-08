@@ -19,6 +19,7 @@ const Input = styled("input", {
   pr: "0",
   border: "none",
   outline: "none",
+  backgroundColor: "transparent",
 });
 
 const Button = styled("button", {
@@ -40,7 +41,7 @@ export default function SearchBox() {
     <form onSubmit={handleSubmit}>
       <p>
         <Label className={labelClass()}>
-          <Input type="search" id="search" name="search" placeholder="검색어를 입력해주세요" />
+          <Input type="text" id="search" name="search" placeholder="검색어를 입력해주세요" />
           <Button type="submit">
             <MagnifyingGlassIcon width={24} height={24} color="#5f0080" />
           </Button>
