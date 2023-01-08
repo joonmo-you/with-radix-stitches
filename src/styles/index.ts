@@ -1,6 +1,6 @@
 import { createStitches } from "@stitches/react";
 
-export const { styled, css } = createStitches({
+export const { styled, css, getCssText } = createStitches({
   theme: {
     colors: {
       primary: "$purple900",
@@ -66,5 +66,21 @@ export const { styled, css } = createStitches({
       3: "8px",
       4: "12px",
     },
+  },
+  utils: {
+    p: (value: string) => ({ padding: value }),
+    pt: (value: string) => ({ paddingTop: value }),
+    pr: (value: string) => ({ paddingRight: value }),
+    pb: (value: string) => ({ paddingBottom: value }),
+    pl: (value: string) => ({ paddingLeft: value }),
+    px: (value: string) => ({ paddingLeft: value, paddingRight: value }),
+    py: (value: string) => ({ paddingTop: value, paddingBottom: value }),
+    m: (value: string) => ({ margin: value }),
+    mt: (value: string) => ({ marginTop: value }),
+    mr: (value: string) => ({ marginRight: value }),
+    mb: (value: string) => ({ marginBottom: value }),
+    ml: (value: string) => ({ marginLeft: value }),
+    mx: (value: string) => ({ marginLeft: value, marginRight: value }),
+    my: (value: string) => ({ marginTop: value, marginBottom: value }),
   },
 });
