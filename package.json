@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
+    "@radix-ui/react-icons": "^1.1.1",
     "@radix-ui/react-label": "^2.0.0",
     "@stitches/react": "^1.2.8",
     "@types/node": "18.11.18",
