@@ -50,5 +50,15 @@ export const { styled, css } = createStitches({
       12: "96px",
       13: "160px",
     },
+    fontSizes: {
+      1: "12px",
+      2: "13px",
+      3: "14px",
+      4: "15px",
+      5: "16px",
+      6: "18px",
+      7: "20px",
+      8: "24px",
+    },
   },
 });
