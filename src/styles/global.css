@@ -74,3 +74,7 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+a {
+  text-decoration: none;
+}

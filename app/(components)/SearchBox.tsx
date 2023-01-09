@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Label } from "@radix-ui/react-label";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
-import { styled, css } from "../src/styles";
+import { styled, css } from "../../src/styles";
 
 const labelClass = css({
   display: "flex",
